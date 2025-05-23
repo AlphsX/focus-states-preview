@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=CircularGIFPanel
+comment0.text=\n\ The\ {@code\ CircularGIFPanel}\ class\ is\ a\ custom\ Swing\ component\ that\ displays\ a\ GIF\ image\ within\ a\ circular\ area.\n\ It\ extends\ {@link\ JPanel}\ and\ overrides\ the\ {@code\ paintComponent}\ method\ to\ draw\ the\ GIF\ in\ a\ circular\ clip.\n\ This\ class\ is\ used\ to\ display\ animated\ GIFs\ with\ a\ circular\ shape\ in\ the\ GUI.\n
+comment1.params=gifPath
+comment1.target=CircularGIFPanel(java.lang.String)
+comment1.text=\n\ Constructs\ a\ new\ {@code\ CircularGIFPanel}\ with\ the\ specified\ GIF\ image\ path.\n\ It\ sets\ the\ background\ color,\ loads\ the\ GIF,\ and\ sets\ the\ preferred\ size\ of\ the\ panel.\n\n\ @param\ gifPath\ The\ file\ path\ to\ the\ GIF\ image\ to\ be\ displayed.\n
+comment2.params=gifPath
+comment2.target=void\ setGif(java.lang.String)
+comment2.text=\n\ Sets\ a\ new\ GIF\ image\ to\ be\ displayed\ in\ the\ panel.\n\ Loads\ the\ new\ GIF\ image\ from\ the\ specified\ path\ and\ repaints\ the\ panel.\n\n\ @param\ gifPath\ The\ file\ path\ to\ the\ new\ GIF\ image.\n
+comment3.params=gifPath
+comment3.target=void\ loadGif(java.lang.String)
+comment3.text=\n\ Loads\ the\ GIF\ image\ from\ the\ specified\ file\ path.\n\ Checks\ if\ the\ file\ exists\ before\ loading\ to\ prevent\ errors.\n\n\ @param\ gifPath\ The\ file\ path\ to\ the\ GIF\ image.\n
+comment4.params=g
+comment4.target=void\ paintComponent(java.awt.Graphics)
+comment4.text=\n\ Overrides\ the\ {@code\ paintComponent}\ method\ to\ draw\ the\ GIF\ image\ within\ a\ circular\ clip.\n\ It\ sets\ anti-aliasing\ rendering\ hints,\ calculates\ the\ circular\ area,\ clips\ the\ graphics\ context,\n\ draws\ the\ image,\ and\ then\ restores\ the\ clip\ and\ draws\ a\ border\ around\ the\ circle.\n\n\ @param\ g\ The\ {@link\ Graphics}\ object\ used\ for\ drawing.\n
+numComments=5

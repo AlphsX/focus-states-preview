@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=FocusSystemListener
+comment0.text=\n\ The\ {@code\ FocusSystemListener}\ interface\ defines\ a\ set\ of\ callback\ methods\ used\ by\ the\ {@link\ FocusSystem}\n\ to\ communicate\ with\ other\ components,\ such\ as\ the\ GUI.\ Implementers\ of\ this\ interface\ can\ respond\ to\ events\n\ like\ time\ updates,\ coin\ updates,\ lock\ status\ changes,\ timer\ completion,\ errors,\ and\ mute\ status\ changes.\n\ This\ allows\ for\ decoupled\ communication\ between\ the\ focus\ system's\ logic\ and\ the\ user\ interface.\n
+comment1.params=formattedTime
+comment1.target=void\ onTimeUpdate(java.lang.String)
+comment1.text=\n\ Called\ when\ the\ focus\ system\ updates\ the\ remaining\ time\ during\ a\ focus\ session.\n\ Implementers\ can\ use\ this\ method\ to\ update\ time\ displays\ or\ progress\ bars.\n\n\ @param\ formattedTime\ The\ formatted\ time\ string\ representing\ the\ time\ left,\ typically\ in\ "MM\:SS"\ format.\n
+comment2.params=coins
+comment2.target=void\ onCoinsUpdate(int)
+comment2.text=\n\ Called\ when\ the\ number\ of\ coins\ has\ changed.\n\ This\ can\ occur\ when\ coins\ are\ earned\ or\ spent.\n\n\ @param\ coins\ The\ current\ total\ number\ of\ coins\ the\ user\ has.\n
+comment3.params=lockNumber\ isUnlocked
+comment3.target=void\ onLockUpdate(int,\ boolean)
+comment3.text=\n\ Called\ when\ a\ feature\ or\ lock\ is\ updated,\ indicating\ whether\ it\ has\ been\ unlocked.\n\ Implementers\ can\ use\ this\ to\ update\ the\ state\ of\ UI\ elements\ representing\ locked\ features.\n\n\ @param\ lockNumber\ \ The\ identifier\ for\ the\ lock\ or\ feature\ (e.g.,\ 1-9).\n\ @param\ isUnlocked\ \ {@code\ true}\ if\ the\ feature\ is\ now\ unlocked;\ {@code\ false}\ otherwise.\n
+comment4.params=
+comment4.target=void\ onTimerFinished()
+comment4.text=\n\ Called\ when\ the\ countdown\ timer\ has\ finished,\ signaling\ the\ end\ of\ a\ focus\ session.\n\ Implementers\ can\ use\ this\ to\ perform\ actions\ like\ rewarding\ the\ user\ or\ resetting\ the\ UI.\n
+comment5.params=message
+comment5.target=void\ onError(java.lang.String)
+comment5.text=\n\ Called\ when\ an\ error\ or\ important\ message\ needs\ to\ be\ conveyed\ to\ the\ user.\n\ This\ can\ be\ used\ for\ displaying\ alerts\ or\ logging\ errors.\n\n\ @param\ message\ A\ string\ describing\ the\ error\ or\ message.\n
+comment6.params=isMuted
+comment6.target=void\ onMuteStatusChanged(boolean)
+comment6.text=\n\ Called\ when\ the\ mute\ status\ of\ the\ application's\ audio\ changes.\n\ Implementers\ can\ update\ mute\ buttons\ or\ audio\ indicators\ accordingly.\n\n\ @param\ isMuted\ {@code\ true}\ if\ the\ audio\ is\ currently\ muted;\ {@code\ false}\ otherwise.\n
+numComments=7
