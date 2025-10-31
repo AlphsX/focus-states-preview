@@ -209,9 +209,6 @@ Focus States x1-preview/
 ## 👥 Authors
 
 **Pomodoro Timer App | Focus States © 2024**
-- **Kongphob Khanisan** (1660702109)
-- **Chanon Doksanthia** (1660702372)
-- **Version**: 1.0, 15/11/24
 
 ## 📄 License
 
