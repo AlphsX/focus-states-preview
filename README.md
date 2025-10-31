@@ -1,7 +1,5 @@
 # Focus States - Productivity Timer Application
 
-![Focus States Logo](images/LOGO.png)
-
 **Focus States** is a Java-based desktop productivity application that implements a Pomodoro-style focus timer with gamification elements. The application helps users improve concentration through timed focus sessions while rewarding them with virtual coins that can be used to unlock additional features.
 
 ## 🌟 Key Features
